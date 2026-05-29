@@ -1,0 +1,81 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Intro to Data Structure_Lecture
+    chapters:
+      - file: Intro_to_Data_Structure_Lecture
+        title: Concept
+
+  - caption: Intro to Python
+    chapters:
+      - file: Intro_to_Python_Lecture
+        title: Concept
+      - file: 1_Intro_to_Python
+        title: Lab Session 1
+      - file: 2_Introduction_to_Python_Code_Lab
+        title: Lab Session 2
+
+  - caption: Complexity
+    chapters:
+      - file: Complexity_Lecture
+        title: Concept
+
+  - caption: Recursion
+    chapters:
+      - file: Recursion_Lecture
+        title: Concept
+      - file: 3_Recursion_Lab
+        title: Lab Session
+
+  - caption: Array
+    chapters:
+      - file: Array_Lecture
+        title: Concept
+      - file: 4_Array_Lab
+        title: Lab Session 1
+      - file: 5_Lab_Participation
+        title: Lab Session 2
+  
+  - caption: Linked List
+    chapters:
+      - file: Linked_List_Lecture
+        title: Concept
+
+  - caption: Stack and Queue
+    chapters:
+      - file: Stack_and_Queue_Lecture
+        title: Concept
+      - file: 6_Stack_Queue
+        title: Lab Session
+
+  - caption: Tree
+    chapters:
+      - file: Tree_Lecture
+        title: Concept
+      - file: 9_Tree
+        title: Lab Session
+
+  - caption: Graph
+    chapters:
+      - file: Graph_Lecture
+        title: Concept
+
+  - caption: Heap
+    chapters:
+      - file: Heap_Lecture
+        title: Concept
+
+  - caption: Sort
+    chapters:
+      - file: Sort_Lecture
+        title: Concept
+
+  - caption: Final Project
+    chapters:
+      - file: Final_Project_Lecture
+        title: Concept
+      - file: DS_final_project_code_demo
+        title: Lab Session
