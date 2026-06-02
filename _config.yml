@@ -1,17 +1,11 @@
 # Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
-
 title: My_DS_jupyter_book
 author: Lee Chaehyeon
 logo: own_logo.png
 
+# Execute settings
 execute:
   execute_notebooks: off
-
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
-execute:
-  execute_notebooks: force
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -24,12 +18,11 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/ichaehyeon748/2026-Data-Structure-Course
+  path_to_book: docs
+  branch: master
 
 # Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true

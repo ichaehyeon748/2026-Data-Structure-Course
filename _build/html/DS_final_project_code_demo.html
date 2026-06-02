@@ -172,7 +172,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intro to Data Structure_Lecture</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intro to Data Structure</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Intro_to_Data_Structure_Lecture.html">Concept</a></li>
 </ul>
@@ -312,7 +312,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/ichaehyeon748/2026-Data-Structure-Course" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -329,7 +329,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDS_final_project_code_demo.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ichaehyeon748/2026-Data-Structure-Course/issues/new?title=Issue%20on%20page%20%2FDS_final_project_code_demo.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -476,7 +476,7 @@ document.write(`
 <p><strong>Class Define</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
@@ -509,7 +509,7 @@ document.write(`
 <p><strong>Insert, Remove Item</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">add_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">add_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_slots</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Inventory Full! Cannot add &#39;</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">False</span>
@@ -566,7 +566,7 @@ document.write(`
 <p><strong>Controller Search</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">navigate_next</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Item</span><span class="p">]:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">navigate_next</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Item</span><span class="p">]:</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">next</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">next</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; Moved ▶ Current Selection: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -595,7 +595,7 @@ document.write(`
 <p>basic operations we explained</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Inventory Structure &amp; Controller Navigation Demo ===&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Inventory Structure &amp; Controller Navigation Demo ===&quot;</span><span class="p">)</span>
 <span class="n">inv</span> <span class="o">=</span> <span class="n">GameInventory</span><span class="p">(</span><span class="n">max_slots</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 
 <span class="n">inv</span><span class="o">.</span><span class="n">add_item</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="s2">&quot;Red_Potion&quot;</span><span class="p">,</span> <span class="n">quantity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
@@ -633,7 +633,7 @@ Initial Cursor Position: Red_Potion
 <p><strong>Search without / with hash map</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">search_without_hash</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Item</span><span class="p">]:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">search_without_hash</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Item</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;[O(N)] Sequential search traversing from Head to Tail&quot;&quot;&quot;</span>
     <span class="n">current</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
     <span class="k">while</span> <span class="n">current</span><span class="p">:</span>
@@ -656,7 +656,7 @@ Initial Cursor Position: Red_Potion
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== 10,000 Items Mass Injection &amp; Search Speed Comparison ===&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== 10,000 Items Mass Injection &amp; Search Speed Comparison ===&quot;</span><span class="p">)</span>
 <span class="c1"># Create a larger inventory to hold 10,000 items</span>
 <span class="n">test_inv</span> <span class="o">=</span> <span class="n">GameInventory</span><span class="p">(</span><span class="n">max_slots</span><span class="o">=</span><span class="mi">15000</span><span class="p">)</span>
 
@@ -687,10 +687,10 @@ Initial Cursor Position: Red_Potion
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== 10,000 Items Mass Injection &amp; Search Speed Comparison ===
 Successfully injected 10000 items into the inventory!
 
-🐌 [O(N) Linear Search] Elapsed Time: 0.7804 ms
-⚡ [O(1) Hash Map Search]   Elapsed Time: 0.0210 ms
+🐌 [O(N) Linear Search] Elapsed Time: 0.7860 ms
+⚡ [O(1) Hash Map Search]   Elapsed Time: 0.0705 ms
 
-💡 Conclusion: Combining a Hash Map makes lookup approx. 37.2 times faster!
+💡 Conclusion: Combining a Hash Map makes lookup approx. 11.2 times faster!
 </pre></div>
 </div>
 </div>
@@ -700,7 +700,7 @@ Successfully injected 10000 items into the inventory!
 <p><strong>LRU Cache</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">_remove_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">InventoryNode</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">_remove_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">InventoryNode</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Disconnect links around the node from the middle of the DLL&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">prev</span><span class="p">:</span> <span class="n">node</span><span class="o">.</span><span class="n">prev</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">next</span>
     <span class="k">else</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">next</span>
@@ -741,7 +741,7 @@ Successfully injected 10000 items into the inventory!
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Verifying Recently Used Item Sorting (LRU) ===&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Verifying Recently Used Item Sorting (LRU) ===&quot;</span><span class="p">)</span>
 <span class="n">lru_inv</span> <span class="o">=</span> <span class="n">GameInventory</span><span class="p">(</span><span class="n">max_slots</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 
 <span class="c1"># Build 4 sequential items</span>
