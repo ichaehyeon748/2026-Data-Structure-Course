@@ -175,7 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intro to Data Structure_Lecture</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intro to Data Structure</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Intro_to_Data_Structure_Lecture.html">Concept</a></li>
 </ul>
@@ -315,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/ichaehyeon748/2026-Data-Structure-Course" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -332,7 +332,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_Recursion_Lab.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ichaehyeon748/2026-Data-Structure-Course/issues/new?title=Issue%20on%20page%20%2F3_Recursion_Lab.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -499,19 +499,13 @@ document.write(`
 <h2>Link Google Drive to Google Colab<a class="headerlink" href="#link-google-drive-to-google-colab" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
 <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;google&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&quot;/content/drive&quot;, force_remount=True).
 </pre></div>
 </div>
 </div>
@@ -521,7 +515,7 @@ document.write(`
 <h2>Modify sys.path to Import External Modules<a class="headerlink" href="#modify-sys-path-to-import-external-modules" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;/content/drive/MyDrive/DataStructureCode&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -534,7 +528,8 @@ document.write(`
 <p>In the lecture, we showed the time complexity of the below algorithm for Fibonacci series is <span class="math notranslate nohighlight">\(O(2^n)\)</span>. In similar way, find Big Omega <span class="math notranslate nohighlight">\(\Omega(\cdot)\)</span> of this algorithm.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Recursion</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="c1"># Recursion</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">fib_recursive</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Incorrect input&quot;</span><span class="p">)</span>
@@ -585,7 +580,7 @@ n!=
 <h2>Solution<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">factorial_for</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">factorial_for</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="n">res</span> <span class="o">=</span> <span class="mi">1</span>
   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
       <span class="n">res</span> <span class="o">*=</span> <span class="n">i</span>
@@ -627,7 +622,7 @@ Time for recursive approach: 0.0005 minutes
 <h2>Solution<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Iterative</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Iterative</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">gugu_iterative</span><span class="p">(</span><span class="n">dan</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> x </span><span class="si">%d</span><span class="s2"> = </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">dan</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">dan</span> <span class="o">*</span> <span class="n">num</span><span class="p">))</span>
@@ -678,7 +673,7 @@ Time for recursive approach: 0.0005 minutes
 <h2>Solution<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fib_recursive2</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">initial_values</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fib_recursive2</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">initial_values</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]):</span>
   <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">initial_values</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">initial_values</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
   <span class="n">next_value</span> <span class="o">=</span> <span class="n">fib_recursive2</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">initial_values</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib_recursive2</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="n">initial_values</span><span class="p">)</span>
