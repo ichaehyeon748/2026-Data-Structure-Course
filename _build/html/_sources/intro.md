@@ -1,6 +1,6 @@
-# 2026 Data Structure Course
+# Data Structure Course
 
-This is a book about lab sessions and related notions to data structures.
+This is a book about lab sessions, notions related to data structures and our final project.
 
 ## Contents
 
